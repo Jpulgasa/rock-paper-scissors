@@ -1,6 +1,5 @@
 // Logic to get the computer choice.
 let randomChoice = Math.floor(Math.random()*3)+1;
-console.log(randomChoice);
 function getComputerChoice(randomChoice) {
     if (randomChoice === 1) {
         return "rock";
@@ -10,4 +9,12 @@ function getComputerChoice(randomChoice) {
         return "scissors";
     }
 }
-console.log(getComputerChoice(randomChoice))
+console.log(getComputerChoice(randomChoice));
+
+//Logic to get the Human Choice.
+let humanChoice = null;
+function getHumanChoice () {
+    humanChoice = prompt("Choose rock, paper or scissors: ");
+    return(humanChoice)
+}
+console.log(getHumanChoice());
